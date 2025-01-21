@@ -1,0 +1,340 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-image: url('../css/drv.jpg'); /* Path to the background image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Fixes the background so it does not scroll */
+    background-position: center; /* Centers the background image */
+}
+
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: #333;
+    color: white;
+    height: 100vh;
+    padding-top: 20px;
+    padding-right: 5px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.sidebar a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #007BFF;
+    color: #ffffff;
+}
+
+/* Logout Button */
+.logout-btn {
+    display: block;
+    background: #e63946;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 250px; /* Adjust for sidebar width */
+    padding: 20px;
+    flex-grow: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007B;
+    color: white;
+    padding: 10px;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header div {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ /* Dashboard Tiles */
+ .tile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Space between tiles */
+    margin-top: 20px;
+}
+.dashboard-tile-alt{
+    background: #007Bff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Make the tiles square */
+    color: white;
+    font-style: inherit;
+}
+/* Enclosing div with white background */
+.dashboard-tile-alt1 {
+    background-color: #fff;  /* White background */
+    padding: 20px;            /* Padding around the content */
+    border-radius: 8px;       /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Soft shadow around the box */
+    margin-bottom: 20px;      /* Spacing between ride cards */
+}
+
+/* Styling for individual ride items */
+.dashboard-tile1 {
+    margin-bottom: 15px;      /* Spacing between ride info */
+    padding: 10px;            /* Padding inside each ride box */
+    border-radius: 5px;       /* Rounded corners */
+}
+
+/* Styling for p tags inside each dashboard-tile */
+.dashboard-tile1 p {
+    font-size: 14px;           /* Smaller text size */
+    color: #333;               /* Dark grey text color for better readability */
+    line-height: 1.6;          /* Increase line height for better readability */
+    margin: 5px 0;             /* Vertical margin between paragraphs */
+}
+
+.dashboard-tile1 p strong {
+    font-weight: bold;         /* Bold for labels like "Booking ID:" */
+    color: #007bff;            /* Blue color for labels */
+}
+
+/* Accept button styling */
+.accept-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #28a745; /* Green color */
+    color: #fff;               /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.accept-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+.dashboard-tile {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* Make the tiles square */
+}
+.dashboard-tile input {
+    width: 80%; /* Wide input fields */
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+
+.dashboard-tile h3 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+
+.dashboard-tile p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Mileage Tile - Full width */
+.mileage-tile {
+    background: #007Bff;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px gray;
+}
+
+.mileage-tile p {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Styling for the popup */
+.popup {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 400px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.popup input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.popup-align{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.popup button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.popup button:hover {
+    background-color: #0056b3;
+}
+
+/* Fade-in effect for the popup */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Overlay to darken the background */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.cont-mile{
+    background: #fff;
+    border-radius: 12px;
+    width: 50%;
+    padding: 10PX;
+}
+
+.dash-tile{
+    background: #fff;
+    border-radius: 9px;
+    padding: 10px;
+    width: 70%;
+}
+
+.dash-tile textarea{
+    width: 70%;
+    height: 100px ;
+    border: solid black 1px;
+    border-radius: 6px;
+
+}
+    
